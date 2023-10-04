@@ -12,5 +12,6 @@ class Restaurant(models.Model):
     address = models.CharField(max_length=120)
     rating = models.DecimalField(max_digits=2, decimal_places=1)
     delivers = models.BooleanField()
+    __all__ = ['name', 'restaurant_type', 'price_range', 'food_type', 'address', 'rating', 'delivers']
 
 

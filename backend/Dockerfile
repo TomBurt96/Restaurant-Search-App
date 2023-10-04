@@ -16,4 +16,4 @@ RUN pipenv sync --system
 EXPOSE 8000
 
 #Run Command
-CMD ["python", "manage.py", "runserver"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
