@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Grid, AppBar, Toolbar, Typography } from '@mui/material'
 import RestaurantList from "./components/restaurantList"
@@ -6,7 +6,6 @@ import Map from "./components/map.jsx"
 import 'leaflet/dist/leaflet.css'
 
 function App() {
-
   return (
     <div className='App'>
       <Grid container sx={{height: "100%"}}>

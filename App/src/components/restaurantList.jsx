@@ -3,58 +3,18 @@ import {
 	List, ListItem, ListItemText, Checkbox, MenuItem, Select, Rating,
 	ListItemIcon, Divider, Stack
 } from '@mui/material'
-
-const testData = [
-	{
-		"id": 1,
-		"name": "test",
-		"restaurant_type": "Fine Dining",
-		"price_range": 3,
-		"food_type": "Italian",
-		"address": "test address",
-		"rating": 5.0,
-		"delivers": false
-	},
-	{
-		"id": 2,
-		"name": "test2",
-		"restaurant_type": "Tavern",
-		"price_range": 2,
-		"food_type": "Pub Food",
-		"address": "test2 address",
-		"rating": 4.5,
-		"delivers": true
-	},
-	{
-		"id": 4,
-		"name": "test23",
-		"restaurant_type": "Tavern",
-		"price_range": 3,
-		"food_type": "Pub Food",
-		"address": "test2 address",
-		"rating": 4.7,
-		"delivers": true
-	},
-	{
-		"id": 5,
-		"name": "test231",
-		"restaurant_type": "Tavern",
-		"price_range": 3,
-		"food_type": "Pub Food",
-		"address": "test2 address",
-		"rating": 4.7,
-		"delivers": true
-	}
-]
+import { useDispatch, useSelector } from "react-redux";
 
 const dollar_range = ["$", "$$", "$$$", "$$$$", "$$$$$"]
 
 function RestaurantList() {
+	const restList = useSelector((state) => state.restaurants.restList)
 
 	const createList = () => {
-		const length = testData.length
+		console.log(restList);
+		const length = restList.length
 		var items = []
-		testData.forEach((restaurant, index) => {
+		restList.forEach((restaurant, index) => {
 			items.push(
 				<ListItem>
 					<Stack>
@@ -75,7 +35,6 @@ function RestaurantList() {
 		})
 		return items
 	}
-	console.log(createList())
 
 	return (
 		<div style={{height: "100%"}}>

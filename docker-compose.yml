@@ -1,5 +1,13 @@
-version: '3'
 services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    container_name: rest_app_db
+    volumes:
+      - ./initialize_db.sql:/docker-entrypoint-initdb.d/initialize_db.sql
+      - ./csvs:/csvs
   frontend:
     build: ./App
     ports: 
