@@ -13,7 +13,9 @@ RUN pip install -U pipenv
 
 RUN pipenv sync --system
 
+RUN apt-get update && apt-get install -y netcat-openbsd
+
 EXPOSE 8000
 
 #Run Command
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["./init.sh"]

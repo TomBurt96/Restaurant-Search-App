@@ -18,7 +18,7 @@ CREATE SCHEMA IF NOT EXISTS restaurant;
 
 -- Create a table within restaurant_scehama schema to match your CSV structure
 CREATE TABLE restaurant.boston(
-    id SERIAL PRIMARY KEY,
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(100),
     food_type VARCHAR(100),
     address VARCHAR(100),
@@ -35,3 +35,5 @@ CREATE TABLE restaurant.boston(
 -- Adjust DELIMITER, CSV HEADER, and ENCODING as needed based on your CSV file.
 COPY restaurant.boston (name, food_type, address, neighborhood, price_range, rating, phone_number, website, delivery, notes) 
 FROM '/csvs/boston_restaurants_100.csv' DELIMITER ',' CSV HEADER;
+
+SELECT * FROM restaurant.boston LIMIT 10

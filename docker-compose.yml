@@ -1,6 +1,8 @@
 services:
   db:
     image: postgres:latest
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mysecretpassword
@@ -8,14 +10,29 @@ services:
     volumes:
       - ./initialize_db.sql:/docker-entrypoint-initdb.d/initialize_db.sql
       - ./csvs:/csvs
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ] # The command to check database readiness
+      interval: 1s     # Check every 5 seconds
+      timeout: 1s      # Give the command 5 seconds to complete
+      retries: 25       # Retry up to 5 times before declaring 'unhealthy'
   frontend:
     build: ./App
+    depends_on:
+      - backend
     ports: 
       - "3000:3000"
     container_name: restaurant-app
     restart: always
   backend:
     build: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+    environment: 
+      DJANGO_SUPERUSER_USERNAME: tb-test
+      DJANGO_SUPERUSER_EMAIL: tennistom4@gmail.com
+      DJANGO_SUPERUSER_PASSWORD: tb-pass
+      PG_DB_HOST: db
     ports:
       - "8000:8000"
     container_name: restaurant-backend

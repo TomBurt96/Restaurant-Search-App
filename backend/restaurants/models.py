@@ -1,11 +1,14 @@
 from django.db import models
+from django.core.validators import RegexValidator
+import uuid
 
 # Create your models here.
 class Restaurant(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4(), editable=False)
     name = models.CharField(max_length=100)
     food_type = models.CharField(max_length=120)
     address = models.CharField(max_length=120)
+    neighborhood = models.CharField(max_length=100)
     price_range = models.CharField(max_length=5)
     rating = models.DecimalField(max_digits=2, decimal_places=1)
     phone_number = models.CharField(
@@ -17,7 +20,9 @@ class Restaurant(models.Model):
             )
         ]
     )
-    wesbite = models.CharField(Max_length=100)
+    website = models.CharField(max_length=100)
     delivery = models.BooleanField()
     notes = models.CharField(max_length=1000)
-    __all__ = ['name', 'restaurant_type', 'price_range', 'food_type', 'address', 'rating', 'delivers']
+    __all__ = ['id', 'name', 'food_type', 'address', 'neighborhood', 'price_range', 'rating', 'phone_number', 'website', 'delivery', 'notes']
+    class Meta:
+        db_table = '"restaurant"."boston"'

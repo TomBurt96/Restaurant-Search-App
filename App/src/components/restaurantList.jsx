@@ -5,8 +5,6 @@ import {
 } from '@mui/material'
 import { useDispatch, useSelector } from "react-redux";
 
-const dollar_range = ["$", "$$", "$$$", "$$$$", "$$$$$"]
-
 function RestaurantList() {
 	const restList = useSelector((state) => state.restaurants.restList)
 
@@ -19,10 +17,10 @@ function RestaurantList() {
 				<ListItem>
 					<Stack>
 						<ListItemText><h3>{restaurant.name}</h3></ListItemText>
-						<ListItemText>{restaurant.restaurant_type}</ListItemText>
-						<ListItemText>{restaurant.price_range}</ListItemText>
 						<ListItemText>{restaurant.food_type}</ListItemText>
+						<ListItemText>{restaurant.price_range}</ListItemText>
 						<ListItemText>{restaurant.address}</ListItemText>
+						<ListItemText>{restaurant.website}</ListItemText>
 						<Rating
 							name="Rating"
 							value={restaurant.rating}
