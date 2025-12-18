@@ -1,5 +1,5 @@
 #use python image as base
-FROM python:3.12
+FROM python:latest
 
 #create directory for backend
 RUN mkdir -p /backend
