@@ -1,12 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Grid, AppBar, Toolbar, Typography } from '@mui/material'
 import RestaurantList from "./components/restaurantList"
 import Map from "./components/map.jsx"
 import 'leaflet/dist/leaflet.css'
+import { useDispatch, useSelector } from 'react-redux';
+import {loadRestaurantsSync} from "./redux/restaurantReducer.js"
 
 function App() {
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    console.log('dispatch thunk');
+    dispatch(loadRestaurantsSync())
+  }, [dispatch]);
+
+  
   return (
     <div className='App'>
       <Grid container sx={{height: "100%"}}>

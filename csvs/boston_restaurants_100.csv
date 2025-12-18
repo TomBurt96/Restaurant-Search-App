@@ -1,0 +1,101 @@
+name,food_type,address,neighborhood,price_range,rating,phone_number,website,delivery,notes
+Oleana,Mediterranean,"134 Hampshire St, Cambridge, MA",Cambridge,$$$,4.8,(617) 661-0505,https://oleanarestaurant.com,Yes,Famous for Middle Eastern flavors
+Neptune Oyster,Seafood,"63 Salem St, Boston, MA",North End,$$$,4.7,(617) 742-3474,https://neptuneoyster.com,No,Known for lobster rolls
+Toro,Spanish Tapas,"1704 Washington St, Boston, MA",South End,$$$,4.6,(617) 536-4300,https://toro-boston.com,Yes,Trendy tapas bar
+Myers + Chang,Asian Fusion,"1145 Washington St, Boston, MA",South End,$$,4.6,(617) 542-5200,https://myersandchang.com,Yes,Hip spot with creative Asian dishes
+O Ya,Japanese,"9 East St, Boston, MA",Leather District,$$$$,4.8,(617) 654-9900,https://oyarestaurantboston.com,No,High-end sushi experience
+Giulia,Italian,"1682 Massachusetts Ave, Cambridge, MA",Cambridge,$$$,4.8,(617) 441-2800,https://giuliarestaurant.com,Yes,Fresh pasta made in-house
+Mamma Maria,Italian,"3 North Sq, Boston, MA",North End,$$$,4.7,(617) 523-0077,https://mammamaria.com,No,Elegant Italian dining
+Union Oyster House,Seafood,"41 Union St, Boston, MA",Downtown,$$,4.4,(617) 227-2750,https://unionoysterhouse.com,Yes,Historic American restaurant
+Sweet Cheeks Q,Barbecue,"1381 Boylston St, Boston, MA",Fenway,$$,4.5,(617) 266-1300,https://sweetcheeksq.com,Yes,Southern BBQ with biscuits
+Sarma,Middle Eastern,"249 Pearl St, Somerville, MA",Somerville,$$$,4.7,(617) 764-4464,https://sarmarestaurant.com,Yes,Creative mezze and cocktails
+Coppa,Italian Tapas,"253 Shawmut Ave, Boston, MA",South End,$$$,4.6,(617) 391-0902,https://coppa-boston.com,Yes,Small plates and charcuterie
+Saltie Girl,Seafood,"281 Dartmouth St, Boston, MA",Back Bay,$$$,4.7,(617) 267-0691,https://saltiegirl.com,Yes,Trendy seafood and raw bar
+Tatte Bakery & Cafe,Cafe,"70 Charles St, Boston, MA",Beacon Hill,$$,4.5,(617) 723-5555,https://tattebakery.com,Yes,Popular brunch and pastries
+Row 34,Seafood,"383 Congress St, Boston, MA",Seaport,$$$,4.6,(617) 553-5900,https://row34.com,Yes,Modern seafood restaurant
+Flour Bakery + Cafe,Bakery,"12 Farnsworth St, Boston, MA",Seaport,$$,4.7,(617) 338-4333,https://flourbakery.com,Yes,Famous for sticky buns
+No. 9 Park,French-Italian,"9 Park St, Boston, MA",Beacon Hill,$$$$,4.7,(617) 742-9991,https://no9park.com,No,Fine dining by Barbara Lynch
+The Friendly Toast,American Diner,"35 Stanhope St, Boston, MA",Back Bay,$$,4.5,(617) 456-7849,https://thefriendlytoast.com,Yes,Eclectic brunch spot
+Yvonne’s,Modern American,"2 Winter Pl, Boston, MA",Downtown,$$$,4.7,(617) 267-0047,https://yvonnesboston.com,No,Chic supper club vibe
+Legal Harborside,Seafood,"270 Northern Ave, Boston, MA",Seaport,$$$,4.5,(617) 477-2900,https://legalseafoods.com,Yes,Harbor views and seafood
+The Capital Grille,Steakhouse,"900 Boylston St, Boston, MA",Back Bay,$$$$,4.7,(617) 262-8900,https://thecapitalgrille.com,No,Upscale steakhouse
+No Relation,Mexican,"452 Newbury St, Boston, MA",Beacon Hill,$,4.6,(617) 571-3691,https://norelation.com,No,Cozy atmosphere
+The Smoke Shop BBQ,Seafood,"429 Hanover St, Boston, MA",Seaport,$$,4.4,(617) 423-6973,https://thesmokeshopbbq.com,Yes,Cozy atmosphere
+House of Siam,Mexican,"983 Newbury St, Boston, MA",North End,$$,4.8,(617) 592-1521,https://houseofsiam.com,Yes,Cozy atmosphere
+Tres Gatos,Italian,"813 Newbury St, Boston, MA",Back Bay,$$,4.7,(617) 828-1058,https://tresgatos.com,Yes,Cozy atmosphere
+The Beehive,Seafood,"389 Harrison Ave, Boston, MA",Cambridge,$$,4.4,(617) 751-6070,https://thebeehive.com,No,Cozy atmosphere
+Menton,French,"176 Boylston St, Boston, MA",Fenway,$$$$,4.8,(617) 316-5923,https://menton.com,No,Great for groups
+Alden & Harlow,Mexican,"453 Harrison Ave, Boston, MA",Seaport,$$$,4.4,(617) 793-1632,https://alden&harlow.com,No,Vegan options available
+Pomodoro,Italian,"230 Newbury St, Boston, MA",Back Bay,$$$$,4.8,(617) 647-9660,https://pomodoro.com,Yes,Great for groups
+The Salty Pig,Mexican,"653 Massachusetts Ave, Boston, MA",North End,$$$$,4.6,(617) 383-2668,https://thesaltypig.com,Yes,Vegan options available
+Union Square Donuts,Mediterranean,"793 Boylston St, Boston, MA",Fenway,$,4.8,(617) 503-2590,https://unionsquaredonuts.com,No,Famous cocktails
+Render Coffee,Bakery,"721 Washington St, Boston, MA",Back Bay,$$,4.7,(617) 601-2102,https://rendercoffee.com,Yes,Rooftop seating
+The Salty Pig,Seafood,"671 Washington St, Boston, MA",North End,$,4.3,(617) 766-3737,https://thesaltypig.com,No,Cozy atmosphere
+Yoki,Asian Fusion,"288 Cambridge St, Boston, MA",Beacon Hill,$$,4.8,(617) 449-4808,https://yoki.com,Yes,Rooftop seating
+Del Frisco’s Double Eagle Steakhouse,Asian Fusion,"423 Boylston St, Boston, MA",Fenway,$$,4.7,(617) 361-9431,https://delfrisco’sdoubleeaglesteakhouse.com,No,Cozy atmosphere
+Committee,American,"170 Cambridge St, Boston, MA",Somerville,$$,4.7,(617) 989-8957,https://committee.com,No,Great for groups
+Ducali Pizzeria,American,"193 Massachusetts Ave, Boston, MA",Beacon Hill,$$$,4.5,(617) 246-1678,https://ducalipizzeria.com,Yes,Vegan options available
+Lolita Cocina,Barbecue,"458 Harrison Ave, Boston, MA",Seaport,$$$,4.4,(617) 137-2278,https://lolitacocina.com,No,Great for groups
+Craigie on Main,Mediterranean,"910 Cambridge St, Boston, MA",Back Bay,$,4.8,(617) 921-7201,https://craigieonmain.com,No,Famous cocktails
+The Paramount,American,"494 Boylston St, Boston, MA",Somerville,$$$,4.6,(617) 382-4450,https://theparamount.com,No,Famous cocktails
+Parish Café,Japanese,"85 Harrison Ave, Boston, MA",Seaport,$$,4.3,(617) 103-5870,https://parishcafé.com,Yes,Vegan options available
+Tres Gatos,Japanese,"944 Massachusetts Ave, Boston, MA",Beacon Hill,$$$,4.5,(617) 786-4597,https://tresgatos.com,No,Famous cocktails
+Antico Forno,French,"85 Hanover St, Boston, MA",Fenway,$$$,4.6,(617) 683-6465,https://anticoforno.com,Yes,Cozy atmosphere
+Darryl’s Corner Bar & Kitchen,Bakery,"610 Washington St, Boston, MA",Downtown,$$$$,4.4,(617) 675-5806,https://darryl’scornerbar&kitchen.com,Yes,Cozy atmosphere
+The Daily Catch,Barbecue,"160 Harrison Ave, Boston, MA",Cambridge,$,4.8,(617) 958-1175,https://thedailycatch.com,Yes,Cozy atmosphere
+No Relation,American,"885 Washington St, Boston, MA",North End,$,4.9,(617) 452-3937,https://norelation.com,No,Cozy atmosphere
+Shojo,French,"927 Massachusetts Ave, Boston, MA",Somerville,$$$$,4.8,(617) 903-6040,https://shojo.com,Yes,Great for groups
+Barking Crab,Japanese,"827 Harrison Ave, Boston, MA",Somerville,$$$$,4.4,(617) 222-7302,https://barkingcrab.com,Yes,Great for groups
+Ducali Pizzeria,Asian Fusion,"122 Washington St, Boston, MA",Back Bay,$$,4.7,(617) 510-2533,https://ducalipizzeria.com,No,Cozy atmosphere
+Menton,Bakery,"918 Massachusetts Ave, Boston, MA",Cambridge,$$$$,4.7,(617) 424-8202,https://menton.com,Yes,Great for groups
+Mei Mei,Seafood,"279 Massachusetts Ave, Boston, MA",Downtown,$$$$,4.6,(617) 880-5116,https://meimei.com,No,Famous cocktails
+House of Siam,Barbecue,"346 Newbury St, Boston, MA",Fenway,$,4.5,(617) 460-1554,https://houseofsiam.com,No,Vegan options available
+Legal Sea Foods,Italian,"128 Harrison Ave, Boston, MA",Downtown,$,4.4,(617) 677-1548,https://legalseafoods.com,Yes,Cozy atmosphere
+Shojo,Asian Fusion,"51 Boylston St, Boston, MA",Back Bay,$,4.7,(617) 512-7539,https://shojo.com,Yes,Vegan options available
+Yoki,Mediterranean,"522 Boylston St, Boston, MA",Fenway,$$$,4.5,(617) 528-5126,https://yoki.com,Yes,Great for groups
+Mei Mei,Bakery,"268 Cambridge St, Boston, MA",Seaport,$$$,4.9,(617) 105-2309,https://meimei.com,No,Vegan options available
+Krasi,Barbecue,"960 Boylston St, Boston, MA",Beacon Hill,$,4.7,(617) 787-4983,https://krasi.com,No,Rooftop seating
+Trillium Brewing,Seafood,"328 Harrison Ave, Boston, MA",Fenway,$,4.4,(617) 942-3578,https://trilliumbrewing.com,No,Vegan options available
+No Relation,Bakery,"697 Hanover St, Boston, MA",North End,$$,4.3,(617) 232-9480,https://norelation.com,Yes,Rooftop seating
+Quincy Market Grill,Barbecue,"847 Newbury St, Boston, MA",Beacon Hill,$$$$,4.7,(617) 789-5271,https://quincymarketgrill.com,Yes,Famous cocktails
+House of Siam,Asian Fusion,"311 Hanover St, Boston, MA",Somerville,$$,4.7,(617) 687-6170,https://houseofsiam.com,No,Great for groups
+Ten Tables,Mediterranean,"459 Cambridge St, Boston, MA",Back Bay,$$$$,4.9,(617) 147-8208,https://tentables.com,Yes,Vegan options available
+Peregrine,Italian,"481 Harrison Ave, Boston, MA",Downtown,$$,4.7,(617) 885-3532,https://peregrine.com,Yes,Vegan options available
+Trade,Seafood,"63 Cambridge St, Boston, MA",Beacon Hill,$$$,4.4,(617) 512-6964,https://trade.com,No,Vegan options available
+Sportello,American,"552 Hanover St, Boston, MA",Downtown,$$$$,4.8,(617) 636-7482,https://sportello.com,Yes,Vegan options available
+Mei Mei,Japanese,"373 Massachusetts Ave, Boston, MA",Seaport,$$$$,4.5,(617) 391-7215,https://meimei.com,Yes,Great for groups
+Temazcal Tequila Cantina,Italian,"103 Harrison Ave, Boston, MA",Beacon Hill,$$$,4.6,(617) 709-2962,https://temazcaltequilacantina.com,Yes,Famous cocktails
+Little Donkey,Mediterranean,"440 Cambridge St, Boston, MA",North End,$$$,4.3,(617) 649-4353,https://littledonkey.com,Yes,Rooftop seating
+Bon Me,Barbecue,"942 Newbury St, Boston, MA",Back Bay,$$$,4.7,(617) 331-8193,https://bonme.com,No,Cozy atmosphere
+Blunch,Mexican,"716 Massachusetts Ave, Boston, MA",Fenway,$$$$,4.8,(617) 912-2308,https://blunch.com,Yes,Cozy atmosphere
+Peregrine,Italian,"375 Harrison Ave, Boston, MA",Beacon Hill,$$$$,4.4,(617) 627-8037,https://peregrine.com,No,Cozy atmosphere
+Craigie on Main,Asian Fusion,"46 Newbury St, Boston, MA",Back Bay,$$$$,4.4,(617) 858-4433,https://craigieonmain.com,No,Famous cocktails
+Hojoko,Japanese,"284 Hanover St, Boston, MA",Downtown,$$$,4.7,(617) 253-6450,https://hojoko.com,Yes,Cozy atmosphere
+Atlantic Fish Co.,Japanese,"741 Massachusetts Ave, Boston, MA",Seaport,$,4.9,(617) 909-5427,https://atlanticfishco..com,No,Great for groups
+Shōjō,American,"501 Washington St, Boston, MA",Somerville,$$,4.6,(617) 593-4777,https://shōjō.com,No,Rooftop seating
+Sportello,Asian Fusion,"927 Boylston St, Boston, MA",Beacon Hill,$$$$,4.8,(617) 587-7998,https://sportello.com,No,Vegan options available
+Trade,Mexican,"696 Hanover St, Boston, MA",Cambridge,$$,4.8,(617) 486-6406,https://trade.com,No,Vegan options available
+Mida,Bakery,"404 Newbury St, Boston, MA",Fenway,$$$$,4.7,(617) 374-8889,https://mida.com,Yes,Great for groups
+Saus Boston,Mediterranean,"464 Harrison Ave, Boston, MA",Beacon Hill,$,4.5,(617) 346-4932,https://sausboston.com,No,Vegan options available
+GreCo,Mexican,"459 Hanover St, Boston, MA",South End,$$$,4.4,(617) 897-8339,https://greco.com,No,Rooftop seating
+Saus Boston,Asian Fusion,"868 Harrison Ave, Boston, MA",Downtown,$,4.4,(617) 822-5117,https://sausboston.com,No,Famous cocktails
+Tres Gatos,Japanese,"110 Harrison Ave, Boston, MA",South End,$$$$,4.8,(617) 726-7588,https://tresgatos.com,Yes,Vegan options available
+Scampo,Barbecue,"610 Massachusetts Ave, Boston, MA",Somerville,$,4.3,(617) 994-6085,https://scampo.com,No,Rooftop seating
+Barking Crab,Seafood,"1 Cambridge St, Boston, MA",Downtown,$$$$,4.5,(617) 341-5591,https://barkingcrab.com,No,Great for groups
+Nico Ristorante,Italian,"645 Massachusetts Ave, Boston, MA",Downtown,$$,4.9,(617) 214-9236,https://nicoristorante.com,Yes,Rooftop seating
+Barcelona Brookline,Mexican,"809 Harrison Ave, Boston, MA",Seaport,$$$$,4.8,(617) 713-5677,https://barcelonabrookline.com,No,Vegan options available
+Atlantic Beer Garden,French,"30 Harrison Ave, Boston, MA",Downtown,$$,4.8,(617) 324-7449,https://atlanticbeergarden.com,No,Famous cocktails
+Tamarind Bay,Asian Fusion,"184 Harrison Ave, Boston, MA",North End,$,4.7,(617) 277-6957,https://tamarindbay.com,Yes,Rooftop seating
+Trillium Brewing,Asian Fusion,"810 Washington St, Boston, MA",Back Bay,$$$,4.6,(617) 362-1005,https://trilliumbrewing.com,No,Vegan options available
+Menton,Barbecue,"676 Boylston St, Boston, MA",North End,$,4.6,(617) 784-7894,https://menton.com,Yes,Cozy atmosphere
+Stillwater,Barbecue,"108 Newbury St, Boston, MA",Beacon Hill,$,4.7,(617) 490-4116,https://stillwater.com,Yes,Great for groups
+Darryl’s Corner Bar & Kitchen,Japanese,"386 Hanover St, Boston, MA",Downtown,$,4.4,(617) 715-6025,https://darryl’scornerbar&kitchen.com,Yes,Cozy atmosphere
+Trillium Brewing,Mediterranean,"369 Hanover St, Boston, MA",Cambridge,$,4.6,(617) 706-7271,https://trilliumbrewing.com,Yes,Great for groups
+Rebel Rebel,French,"432 Hanover St, Boston, MA",South End,$,4.6,(617) 617-4338,https://rebelrebel.com,Yes,Cozy atmosphere
+Committee,Barbecue,"355 Boylston St, Boston, MA",Somerville,$$,4.5,(617) 502-7591,https://committee.com,No,Famous cocktails
+Teranga,French,"275 Harrison Ave, Boston, MA",Somerville,$$,4.9,(617) 470-4252,https://teranga.com,Yes,Rooftop seating
+Bistro du Midi,Barbecue,"966 Harrison Ave, Boston, MA",Cambridge,$$$,4.8,(617) 669-8008,https://bistrodumidi.com,No,Cozy atmosphere
+Temazcal Tequila Cantina,Barbecue,"558 Washington St, Boston, MA",Somerville,$$,4.6,(617) 447-6955,https://temazcaltequilacantina.com,No,Great for groups
+Grill 23 & Bar,Seafood,"828 Massachusetts Ave, Boston, MA",Back Bay,$$$$,4.6,(617) 735-9096,https://grill23&bar.com,No,Vegan options available
+Trillium Brewing,Mexican,"790 Washington St, Boston, MA",Beacon Hill,$,4.5,(617) 724-4836,https://trilliumbrewing.com,Yes,Great for groups
+Legal Sea Foods,Seafood,"31 Cambridge St, Boston, MA",North End,$$$,4.9,(617) 437-7585,https://legalseafoods.com,Yes,Cozy atmosphere
