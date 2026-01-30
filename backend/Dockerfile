@@ -8,12 +8,20 @@ WORKDIR /backend
 #Copy directory into backend
 COPY . ./
 
+#add environment packages
+RUN apt-get update && apt-get install -y \
+netcat-openbsd \
+binutils \
+libproj-dev \
+gdal-bin \
+libgdal-dev \
+python3-gdal \
+&& rm -rf /var/lib/apt/lists/*
+
 #install pipenv for virtual environment
 RUN pip install -U pipenv
 
 RUN pipenv sync --system
-
-RUN apt-get update && apt-get install -y netcat-openbsd
 
 EXPOSE 8000
 

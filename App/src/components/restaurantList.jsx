@@ -1,20 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import {
 	List, ListItem, ListItemText, Checkbox, MenuItem, Select, Rating,
-	ListItemIcon, Divider, Stack
+	ListItemIcon, Divider, Stack, Box
 } from '@mui/material'
 import { useDispatch, useSelector } from "react-redux";
+import { selectRestaurants, selectRestId, setSelectedRestId } from '../redux/restaurantReducer';
 
 function RestaurantList() {
-	const restList = useSelector((state) => state.restaurants.restList)
+	const dispatch = useDispatch();
+	const restList = useSelector(selectRestaurants);
+	const selectedId = useSelector(selectRestId);
+	const listItemsRef = useRef({});
+	console.log('restList in RestaurantList: ', restList);
+
+	useEffect(() => {
+		if (selectedId && listItemsRef.current[selectedId]) {
+			listItemsRef.current[selectedId].scrollIntoView({
+				behavior: 'smooth', // Smooth animation
+				block: 'nearest',   // Minimizes scrolling distance
+			});
+		}
+	}, [selectedId]);
 
 	const createList = () => {
-		console.log(restList);
 		const length = restList.length
 		var items = []
 		restList.forEach((restaurant, index) => {
 			items.push(
-				<ListItem>
+				<ListItem key={restaurant.id}
+					button
+					selected={restaurant.id === selectedId}
+					ref={(el) => (listItemsRef.current[restaurant.id] = el)}
+					onClick={() => dispatch(setSelectedRestId(restaurant.id))}
+				>
 					<Stack>
 						<ListItemText><h3>{restaurant.name}</h3></ListItemText>
 						<ListItemText>{restaurant.food_type}</ListItemText>
@@ -28,18 +46,18 @@ function RestaurantList() {
 					</Stack>
 				</ListItem>)
 			if (index < length - 1) {
-				items.push(<Divider></Divider>)
+				items.push(<Divider key={`divider-${restaurant.id}`}></Divider>)
 			}
 		})
 		return items
 	}
 
 	return (
-		<div style={{height: "100%"}}>
-			<List sx={{height: "100%", overflow: 'auto'}}>
+		<Box sx={{ flexGrow: 1, overflowY: 'auto', bgcolor: '#f5f5f5' }}>
+			<List>
 				{createList()}
 			</List>
-		</div>
+		</Box>
 	)
 }
 

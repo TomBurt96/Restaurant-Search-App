@@ -1,24 +1,23 @@
-import { useEffect, useState } from 'react'
+import { useEffect} from 'react'
 import './App.css'
 import { Grid, AppBar, Toolbar, Typography } from '@mui/material'
 import RestaurantList from "./components/restaurantList"
 import Map from "./components/map.jsx"
 import 'leaflet/dist/leaflet.css'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import {loadRestaurantsSync} from "./redux/restaurantReducer.js"
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('dispatch thunk');
     dispatch(loadRestaurantsSync())
   }, [dispatch]);
 
   
   return (
     <div className='App'>
-      <Grid container sx={{height: "100%"}}>
+      <Grid>
         <AppBar position="static">
           <Toolbar>
             <Typography>
@@ -27,8 +26,13 @@ function App() {
           </Toolbar>
         </AppBar>
       </Grid>
-      <Grid container sx={{height: "100%"}}>
-        <Grid xs={3} item>
+      <Grid container height='calc(100vh - 64px)'>
+        <Grid xs={3} item sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          height: '100%',
+          minHeight: 0
+        }}>
           <RestaurantList />
         </Grid>
         <Grid xs={9} item>
