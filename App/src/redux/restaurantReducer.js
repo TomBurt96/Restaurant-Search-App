@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
+import { createSlice, createAsyncThunk, createSelector } from "@reduxjs/toolkit"
 import axios from "axios"
 
 const BACKEND_URL = "http://localhost:8000/api"
@@ -6,6 +6,7 @@ const BACKEND_URL = "http://localhost:8000/api"
 const initialState = {
 	restList: [],
 	status: "",
+	selectedRestId: null,
 }
 
 const restaurantSlice = createSlice({
@@ -15,6 +16,9 @@ const restaurantSlice = createSlice({
 		loadRestaurants(state, action) {
 			state.restList = action.payload.restaurants;
 		},
+		setSelectedRestId: (state, action) => {
+      		state.selectedRestId = action.payload;
+    },
 	},
 	extraReducers: (builder) => {
     builder
@@ -34,7 +38,7 @@ const restaurantSlice = createSlice({
   },
 })
 
-export const { loadRestaurants } = restaurantSlice.actions;
+export const { loadRestaurants, setSelectedRestId } = restaurantSlice.actions;
 
 export const loadRestaurantsSync = createAsyncThunk(
 	'restaurants/loadRestaurantsSync',
@@ -50,3 +54,32 @@ export const loadRestaurantsSync = createAsyncThunk(
 );
 
 export default restaurantSlice.reducer
+
+const selectRestaurantState = (state) => state.restaurants;
+export const selectRestId = (state) => state.restaurants.selectedRestId;
+
+/*
+export const selectActiveFeature = createSelector(
+  [selectRestId],
+  (selectedId) => {
+    if (!selectedId) return null;
+    return geoData.features.find((f) => f.properties.id === selectedId);
+  }
+);
+*/
+
+export const selectAllGeoJson = createSelector(
+  [selectRestaurantState],
+  (restaurants) => {
+	console.log("selectAllGeoJson", restaurants);
+	return restaurants.restList;
+  }
+);
+
+export const selectRestaurants = createSelector(
+	[selectAllGeoJson],
+	(geoJson) => {
+		if (!geoJson || !geoJson.features) return [];
+		return geoJson.features.map((feature) => feature.properties);
+	}
+);

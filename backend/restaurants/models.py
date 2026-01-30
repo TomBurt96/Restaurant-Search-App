@@ -1,4 +1,4 @@
-from django.db import models
+from django.contrib.gis.db import models
 from django.core.validators import RegexValidator
 import uuid
 
@@ -23,6 +23,7 @@ class Restaurant(models.Model):
     website = models.CharField(max_length=100)
     delivery = models.BooleanField()
     notes = models.CharField(max_length=1000)
-    __all__ = ['id', 'name', 'food_type', 'address', 'neighborhood', 'price_range', 'rating', 'phone_number', 'website', 'delivery', 'notes']
+    position = models.PointField(geography=True, srid=4326, blank=True, null=True)
+    __all__ = ['id', 'name', 'food_type', 'address', 'neighborhood', 'price_range', 'rating', 'phone_number', 'website', 'delivery', 'notes', 'position']
     class Meta:
         db_table = '"restaurant"."boston"'
